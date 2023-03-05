@@ -1,0 +1,25 @@
+{
+  "name": "mc_events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p . --project tsconfig.json",
+    "start": "node build",
+    "start:screen": "npm run build && screen -S mc_events npm start",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "aj3x",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "minecraft-server-logs": "^1.1.8",
+    "tail": "^2.2.6",
+    "typed-regex": "^0.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.1",
+    "@types/tail": "^2.2.1"
+  }
+}
